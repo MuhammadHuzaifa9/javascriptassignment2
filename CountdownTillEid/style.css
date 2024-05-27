@@ -1,0 +1,21 @@
+body {
+    color: #ffe819;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(./Eid-AlAdha_Background.jpg) ;
+    background-size: contain;
+  }
+  
+  .countdown-container {
+    text-align: center;
+  }
+  
+  #countdown {
+    font-size: 36px;
+    margin-top: 20px;
+  }
+  
