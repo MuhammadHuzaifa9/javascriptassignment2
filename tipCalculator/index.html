@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculate Your Tip</title>
+</head>
+<body>
+    <div class="main">
+        <div class="heading">
+            <h1>Tip Calculator</h1>
+        </div>
+        <div class="p">
+            Enter the amount in percentage you want to Tip:
+        </div>
+        <div class="amountdiv">
+            <label for="amount">Enter Amount:</label>
+            <input type="number" name="" id="amount" min="0" required>
+        </div>
+        <div class="percentagediv">
+            <label for="percentage">Tip Percentage</label>
+            <input type="number" id="percentage" min="0" required>
+        </div>
+        <div class="calculatediv">
+            <button id="calculate" onclick="calculatetip()">Calculate</button>
+        </div>
+        <div class="result">
+            Tip Amount: <span id="tipamount"></span>
+
+        </div>
+        <div class="total">
+            Total Amount: <span id="totalamount"></span>
+
+        </div>
+
+
+
+
+
+
+    </div>
+   
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
