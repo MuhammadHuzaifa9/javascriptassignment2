@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: scroll;
+    background-color: hsl(210, 36%, 96%);
+    font-family: sans-serif;
+}
+h1{
+    font-weight: bold;
+    letter-spacing: 3px;
+    
+}
+h6{
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: black;
+}
+.main{
+    padding: 4%;
+   
+}
+.header{
+    margin-top: 3%;
+}
+.pic{
+    
+    
+    height: 20rem;
+    border-radius: 5px ;
+    background-image:url(./image/hero-bcg.jpeg);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+}
+.HVG{
+    
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+.buttons{
+   
+    background-color: rgb(221, 221, 255);
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 50px;
+}
+.buttons div{
+    width: 35%;
+    height: 50px;
+}
+.material{
+    width: 100%;
+    background-color: white;
+    height: 17rem;
+    height: fit-content;
+    padding: 5%;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius: 5px;
+}
+button{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgb(221, 221, 255) ;
+}
+.wordspacing{
+    color: black;
+    letter-spacing: 5px;
+}
+.lightfont{
+    font-weight: 400;
+    color: rgb(148, 148, 148);
+}
+button:focus {
+    background-color: white;
+}
+button:hover {
+    background-color: rgb(215, 243, 243);
+    color: rgb(96, 96, 247);
+    transition: 0.6s linear;
+}
+@media screen and (max-width:1100px){
+    .material{
+        height: fit-content;
+        
+    }
+    
+}
+@media screen and (min-width:1367px){
+    .pic{
+        height: 30rem;
+    }
+    .material{
+        height: 25rem;
+        height: max-content;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    h6{
+        font-size: large;
+    }
+    
+}
