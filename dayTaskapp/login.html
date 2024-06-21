@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayTask Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="./images/Group 5.png" alt="DayTask Logo">
+        </div>
+        <h1>Welcome Back!</h1>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <div class="input-wrapper">
+                    <img src="./images/usertag.png" alt="Email Icon" class="icon">
+                    <input type="email" id="email" placeholder="Email Address">
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <div class="input-wrapper">
+                    <img src="./images/lock1.png" alt="Password Icon" class="icon">
+                    <input type="password" id="password" placeholder="Password">
+                    <img src="./images/eyeslash.png" alt="Show Password Icon" class="icon-eye" id="togglePassword">
+                </div>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+            <button type="submit" class="login-btn">Log In</button>
+            <div class="separator">
+                <span>Or continue with</span>
+            </div>
+            <button type="button" class="google-btn">
+                <img src="./images/google.png" alt="Google Icon"> Google
+            </button>
+            <p class="signup-link">Don't have an account? <a href="#">Sign Up</a></p>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

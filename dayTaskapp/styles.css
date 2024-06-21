@@ -1,0 +1,153 @@
+@font-face {
+    font-family: inter;
+    src: url(./images/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #212832;
+    font-family: inter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.login-container {
+    background-color: #2C3E50;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.logo img {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.input-wrapper {
+    position: relative;
+    max-width: 100%;
+}
+
+.input-wrapper .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.input-wrapper .icon-eye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #34495E;
+    color: #fff;
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: #FED36A;
+    text-decoration: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #FED36A;
+    color: #212832;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #BDC3C7;
+    margin-bottom: 1rem;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #BDC3C7;
+}
+
+.separator::before {
+    margin-right: 0.5em;
+}
+
+.separator::after {
+    margin-left: 0.5em;
+}
+
+.google-btn {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+
+.signup-link {
+    font-size: 0.9rem;
+    color: #BDC3C7;
+}
+
+.signup-link a {
+    color: #FED36A;
+    text-decoration: none;
+}
