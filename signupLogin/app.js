@@ -6,39 +6,39 @@ const getUserdata = () => {
     const imageInput = document.getElementById('image');
     const imageFile = imageInput.files[0];
 
-    // Validation to ensure all fields are filled
+   
     if (!email || !password || !username) {
         alert('Please fill in all fields.');
-        return; // Stop the function execution if validation fails
+        return; 
     }
 
-    // Email validation using regex
+   
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
         alert('Please enter a valid email address.');
-        return; // Stop the function execution if validation fails
+        return; 
     }
 
-    // Username validation using regex
+    
     const usernameRegex = /^[a-zA-Z0-9_]{3,16}$/;
     if (!usernameRegex.test(username)) {
         alert('Username must be 3-16 characters long and can only contain letters, numbers, and underscores.');
-        return; // Stop the function execution if validation fails
+        return; 
     }
 
-    // Password validation using regex
+    
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,32}$/;
 
 
     if (!passwordRegex.test(password)) {
         alert('Password must be 8-32 characters long, contain at least one uppercase letter, one lowercase letter, one digit, and one special character.');
-        return; // Stop the function execution if validation fails
+        return; 
     }
 
-    // Validation to ensure an image is uploaded
+    
     if (!imageFile) {
         alert('Please upload an image.');
-        return; // Stop the function execution if validation fails
+        return; 
     }
 
     let userData = JSON.parse(localStorage.getItem('userData')) || [];
