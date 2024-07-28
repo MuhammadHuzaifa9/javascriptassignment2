@@ -49,6 +49,7 @@ body{
     font-size: medium;
     height: 50px;
     width: 7%;
+    min-width: 60px;
     border-radius: 7px;
 }
 .avimg{
@@ -58,6 +59,7 @@ body{
 }
 .card{
     width: 45%;
+    min-width: 230px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,4 +75,7 @@ body{
 .followers{
     color: grey;
     font-size: medium;
+}
+.box{
+    min-width: 400px;
 }
